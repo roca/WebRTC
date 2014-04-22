@@ -16,7 +16,7 @@ navigator.getWebcam(
 
 function gotWebcam(stream){
 
-	
+
 	localVideo.src = window.URL.createObjectURL(stream);
 	localVideo.play();
 
@@ -24,6 +24,6 @@ function gotWebcam(stream){
 	var output = document.getElementById('output');
 	output.innerHTML = "stream id = " + stream.id + "<BR>";
 	output.innerHTML += "track readyState = " + video_track.readyState + "<BR>";
-	output.innerHTML += "stream id = " + video_track.id + "<BR>";
-	output.innerHTML += "stream id = " + video_track.kind + "<BR>";
+	output.innerHTML += "track id = " + video_track.id + "<BR>";
+	output.innerHTML += "kind = " + video_track.kind + "<BR>";
 };
