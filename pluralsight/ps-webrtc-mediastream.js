@@ -8,11 +8,12 @@ navigator.getWebcam(
        gotWebcam,
 
        //errorCallback
-       function(err){
-          console.log("Oops! Something's not right." + err)
-       }
+       gotError
 );
 
+function gotError(err) {
+     console.log("Oops! Something's not right." + err)
+};
 
 function gotWebcam(stream){
 
