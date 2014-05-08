@@ -21,16 +21,15 @@ input {
   font-weight: bold;
 }
 
-#localVideo {
-  margin-top: 25px;
+#my-video {
+  margin-top: 15px;
   width: 180px;
-  width: 180;
   height: auto;
   background-color: #eee;
 }
 
-#remotes {
-  width: 320;
+#their-video {
+  width: 320px;
   height: 240;
   background-color: #eee;
 }
